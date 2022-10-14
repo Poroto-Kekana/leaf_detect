@@ -33,6 +33,6 @@ def upload_file():
         return jsonify(prediction)
 
 if __name__ == '__main__':
-    app.run(host="localhost", port=3011, debug=True)
+    app.run(host="localhost", port=3002, debug=True)
 
         # f.save('./uploaded.file')
