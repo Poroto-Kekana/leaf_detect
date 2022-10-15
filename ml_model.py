@@ -16,7 +16,7 @@ def getPrediction(filename):
     my_model=load_model("vgg16_model")
     
     SIZE = 224 #Resize to same size as training images
-    img_path = "static/images/"+filename
+    img_path = "static\images/" + filename
     img = np.asarray(Image.open(img_path).resize((SIZE,SIZE)))
     
     img = img/255.      #Scale pixel values
