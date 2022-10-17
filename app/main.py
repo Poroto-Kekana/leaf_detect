@@ -5,7 +5,7 @@ from flask_cors import CORS
 import os
 
 
-UPLOAD_FOLDER = 'static\images'
+UPLOAD_FOLDER = './'
 
 app = Flask(__name__)
 CORS(app)
