@@ -4,6 +4,7 @@ from sklearn.preprocessing import LabelEncoder
 from tensorflow.keras.models import load_model
 
 
+
 def getPrediction(filename):
     
     classes = ["Tomato_Early_blight", "Tomato_Late_blight", "Tomato_healthy", "Tomato_Tomato_YellowLeaf_Curl_Virus", "Tomato_Bacterial_spot", "Tomato_Septoria_leaf_spot"]
