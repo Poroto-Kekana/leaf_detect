@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, url_for, flash, redirect, jsonify
 from werkzeug.utils import secure_filename
-from ml_model import getPrediction
+from model import getPrediction
 from flask_cors import CORS
 import os
 
