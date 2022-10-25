@@ -14,7 +14,7 @@ def getPrediction(filename):
     
     
     #Load model
-    my_model=load_model("vgg16_model")
+    my_model=load_model("model.h5")
     
     SIZE = 224 #Resize to same size as training images
     img_path = "./" + filename
