@@ -7,14 +7,14 @@ from tensorflow.keras.models import load_model
 
 def getPrediction(filename):
     
-    classes = ["Yellow leaf curl virus", "Septoria leaf spot", "Healthy tomato leaf", "Late blight", "Bacterial spot", "Early blight"]
+    classes = ["Tomato_Early_blight", "Tomato_Late_blight", "Tomato_healthy", "Tomato_Tomato_YellowLeaf_Curl_Virus", "Tomato_Bacterial_spot", "Tomato_Septoria_leaf_spot"]
     le = LabelEncoder()
     le.fit(classes)
     le.inverse_transform([2])
     
     
     #Load model
-    my_model=load_model("vgg16Epoch5New")
+    my_model=load_model("vgg16_model")
     
     SIZE = 224 #Resize to same size as training images
     img_path = "./" + filename
